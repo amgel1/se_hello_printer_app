@@ -4,7 +4,11 @@ Simple Flask App
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
+
 .. image:: https://app.statuscake.com/button/index.php?Track=2mZxRiA7EE&Days=1&Design=1" /></a>
+
+
+<a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=2mZxRiA7EE&Days=1&Design=1" /></a>
 
 - Rozpocząnając pracę z projektem (wykorzystując virtualenv). Hermetyczne środowisko dla pojedyńczej aplikacji w python-ie:
 

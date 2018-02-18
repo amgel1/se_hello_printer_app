@@ -26,3 +26,7 @@ docker_run: docker_build
 		--name hello-world-printer-dev \
 		-p 5000:5000 \
 		-d $(SERVICE_NAME)
+test_cov:
+	PYTHONPATH=. py.test --verbose -s --cov=.
+test_xunit:
+	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml
