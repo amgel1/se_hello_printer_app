@@ -6,7 +6,8 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
 .. image:: https://app.statuscake.com/button/index.php?Track=2mZxRiA7EE&Days=1&Design=1
 
-<a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=2mZxRiA7EE&Days=1&Design=1" /></a>
+
+.. image:: https://travis-ci.org/amgel1/se_hello_printer_app.svg?branch=master
 
 - Rozpocząnając pracę z projektem (wykorzystując virtualenv). Hermetyczne środowisko dla pojedyńczej aplikacji w python-ie:
 
