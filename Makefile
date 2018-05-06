@@ -1,4 +1,4 @@
-.PHONY: test
+.PHONY: test test_api
 
 SERVICE_NAME=hello-world-printer
 
@@ -30,3 +30,5 @@ test_cov:
 	PYTHONPATH=. py.test --verbose -s --cov=.
 test_xunit:
 	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml
+test_api:
+	python test_api/lalala.py

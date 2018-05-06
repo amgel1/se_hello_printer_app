@@ -4,10 +4,14 @@ python:
 install:
   - make deps
 script:
-  - make test
+  - make lint
   - make test_xunit
+  - make docker_build
+  - make docker_run
+  - sleep 3; make test_api
 after_success:
   - make docker_build
+  - make docker_push
 deploy:
   provider: heroku
   app: protected-ridge-47688
