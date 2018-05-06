@@ -1,4 +1,4 @@
-.PHONY: test test_api
+.PHONY: test test_api test_ui
 
 SERVICE_NAME=hello-world-printer
 
