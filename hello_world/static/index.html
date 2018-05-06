@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>To jest swiat</title>
-</head>
-<body>
-    <a href="https://google.com/search?q=imiona%20slawnych%20ludzi">Znajdź
-      imiona znanych ludzi</a>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<h1>Witaj swiecie</h1>
-<p>Tu jest cos napisane.</p>
+  </head>
+  <body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            console.log( "ready!" );
 
-</body>
+            $.getJSON( "/?output=json", function( data ) {
+                console.log( data );
+                $('#imie').text(data['imie'])
+            })
+        });
+    </script>
+    <h1>Witaj swiecie</h1>
+    <div>Część! <p id='imie'></p><div>
+
+    <a href="https://google.com/search?q=imiona%20slawnych%20ludzi">Znajdź imiona znanych ludzi</a>
+  </body>
 </html>
-
-
-
-Witaj  swiecie
