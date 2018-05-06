@@ -10,7 +10,7 @@ lint:
 	flake8 hello_world test
 
 test:
-	PYTHONPATH=. py.test --verbose -s
+	PYTHONPATH=. py.test --verbose -s  --ignore=test_ui
 
 run:
 	python main.py
@@ -20,6 +20,8 @@ test_smoke:
 
 docker_build:
 	docker build -t $(SERVICE_NAME) .
+test_ui:
+	py.test test_ui/test_ui.py
 
 docker_run: docker_build
 		docker run \
@@ -27,8 +29,10 @@ docker_run: docker_build
 		-p 5000:5000 \
 		-d $(SERVICE_NAME)
 test_cov:
-	PYTHONPATH=. py.test --verbose -s --cov=.
+	PYTHONPATH=. py.test --verbose -s --cov=.  --ignore=test_ui
+
 test_xunit:
-	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml
+	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml --ignore=test_ui
+
 test_api:
 	python test_api/lalala.py
